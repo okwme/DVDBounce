@@ -8,6 +8,9 @@
 by billy rennekamp
 billyrennekamp.com
 
+DVDBounce was made for everyone but with rafael rozendaal & constant dullaart in mind
+they each have a special relationship to the floating dvd symbol
+
 ----------------------------
 
 To use DVDBounce just put 
@@ -42,9 +45,6 @@ make sure you use the same div ID as inside of your jquery call
 </div>
 
 ----------------------------
-
-DVDBounce was made for everyone but with rafael rozendaal & constant dullaart in mind
-they each have a special relationship to the floating dvd symbol
 
  _____ __      __ _____   ____                                  
 |  __ \\ \    / /|  __ \ |  _ \                                 
