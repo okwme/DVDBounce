@@ -2,10 +2,12 @@
  $.fn.DVDBounce = function(options) {
 
   var defaults = {
-   inc: 1
+   inc  : 1,
+   debug: false
   };
   var options = $.extend(defaults, options);
     var inc = options.inc;
+    var debug = options.debug;
     var imageIDs = [];
     var width = 0;
     var height = 0;
@@ -34,8 +36,10 @@
       changeImage();
       div.css("width",width);
       div.css("height",height);
-      console.log(width+","+height);
       
+      if ( debug ) {
+          console.log(width+","+height);
+      }
       move = setInterval(function(){
           pos = div.offset();
           x = pos.left;
@@ -74,9 +78,10 @@
                 }
           }
           
-          console.log("window:"+winW+","+winH);
-          console.log("box:"+(x+width)+","+(y+height));
-
+          if ( debug ) {
+              console.log("window:"+winW+","+winH);
+              console.log("box:"+(x+width)+","+(y+height));
+          }
          div.offset({left:x, top:y});       
       },10);
 
